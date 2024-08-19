@@ -1128,4 +1128,30 @@ color: black;
 
   .footer { padding-block-start: 40px; }
 
+}.scrolling-text {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #f70951, #e84a79, #e7a65c);
+  padding: 10px 0;
+  font-family: Arial;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.scrolling-text p {
+  display: inline-block;
+  font-size: 24px;
+  color: black;
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
 }
